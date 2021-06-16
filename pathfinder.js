@@ -32,9 +32,11 @@ class PathFinder
 const paths = new PathFinder();
 
 
-// how to use into js project**: 
+// how to use into js project***: 
 // log("actual page is: ",paths.pagename);
 // <img src="'+paths.foico+'myimage.svg">
 
 // * this file can be used only in js and tested out of node.js
 // * "resources" and all shortcuts is an exemple and optional folders
+// * set your local virtualhost whit prefix "git-" or "lws-"
+//   "git-" (github repo hosted), "lws-" (localhost web service, wamp, xamp...) 
