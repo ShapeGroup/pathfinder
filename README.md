@@ -1,2 +1,3 @@
 # web.pathfinder
-Simple class to get a folders into a web project
+---
+Js class to get a folders into a web project
