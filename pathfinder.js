@@ -1,4 +1,5 @@
 //// Licence MIT : V4 : Credits Alberto Marà
+//:: plain js version - for web project
 
 class PATHFINDER
 {
@@ -31,12 +32,3 @@ class PATHFINDER
 
 }
 const paths = new PATHFINDER();
-
-
-// how to use into js project***: 
-// exemple: log("actual page is: ",paths.pagename);
-// exemple: <img src="'+paths.foico+'myimage.svg">
-
-//* this file can be used only in js and tested out of node.js
-//* "resources" and all shortcuts is an exemple and optional folders
-//* set your local virtualhost or repo whit prefix "dev-" ex: dev-mysite
