@@ -1,6 +1,6 @@
 //// Licence MIT : V4 : Credits Alberto Marà
 
-class PathFinder
+class PATHFINDER
 {
 
     constructor()
@@ -12,11 +12,12 @@ class PathFinder
     {
 
         this.url        = String(window.location);
-        this.islocal    = (this.url.includes('git-')||this.url.includes('lws-')) ? true : false;
+        this.islocal    = (this.url.includes('dev-')) ? true : false;
         this.protocol   = (this.url.includes('http')) ? 'http' : 'https';
         this.hostname   = this.url.split(this.protocol+"://")[1].split("/")[0];
         this.basehost   = this.protocol+"://"+this.hostname+'/';
         this.pagename   = this.url.split("/").pop().split("?")[0];
+
         this.resouces   = this.basehost+'resources/';
 
         //exemple of subs resources shortcuts:
@@ -29,14 +30,13 @@ class PathFinder
 
 
 }
-const paths = new PathFinder();
+const paths = new PATHFINDER();
 
 
 // how to use into js project***: 
-// log("actual page is: ",paths.pagename);
-// <img src="'+paths.foico+'myimage.svg">
+// exemple: log("actual page is: ",paths.pagename);
+// exemple: <img src="'+paths.foico+'myimage.svg">
 
-// * this file can be used only in js and tested out of node.js
-// * "resources" and all shortcuts is an exemple and optional folders
-// * set your local virtualhost whit prefix "git-" or "lws-"
-//   "git-" (github repo hosted), "lws-" (localhost web service, wamp, xamp...) 
+//* this file can be used only in js and tested out of node.js
+//* "resources" and all shortcuts is an exemple and optional folders
+//* set your local virtualhost or repo whit prefix "dev-" ex: dev-mysite
