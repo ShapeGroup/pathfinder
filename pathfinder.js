@@ -14,7 +14,7 @@ class PATHFINDER
 
         this.url        = String(window.location);
         this.islocal    = (this.url.includes('dev-')) ? true : false;
-        this.protocol   = (this.url.includes('http')) ? 'http' : 'https';
+        this.protocol   = (this.url.includes('https')) ? 'https' : 'http';
         this.hostname   = this.url.split(this.protocol+"://")[1].split("/")[0];
         this.basehost   = this.protocol+"://"+this.hostname+'/';
         this.pagename   = this.url.split("/").pop().split("?")[0];
